@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "HealthStaff",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -25,47 +25,37 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
+  "primaryTab": {
+    "name": "Project Details"
+  },
   "tabs": [
+    {
+      "name": "Chapter 1",
+      "url": "chapter1"
+    },
     {
       "name": "API Reference",
       "url": "api-reference"
     }
   ],
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Project Details",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "Project-Details/declaration",
+        "Project-Details/supervisory-members",
+        "Project-Details/acronyms-abbreviations"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Chapter 1",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "chapter1/introduction",
+        "chapter1/problem-description",
+        "chapter1/project-objectives",
+        "chapter1/project-scope"
       ]
     },
     {
