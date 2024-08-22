@@ -5,7 +5,7 @@ description: 'Defining the boundaries and key components of the HealthStaff syst
 
 # Project Scope
 
-The HealthStaff project encompasses the development of a comprehensive web-based HR management system tailored for healthcare organizations. This section outlines the key areas and functionalities included in the project scope.
+The HealthStaff project encompasses the development of a comprehensive web-based HR management system tailored for healthcare organization APTIV . This section outlines the key areas and functionalities included in the project scope.
 
 ## Core Modules
 
@@ -34,53 +34,111 @@ The HealthStaff project encompasses the development of a comprehensive web-based
 
 <AccordionGroup>
     <Accordion title="Data Extraction and Reporting">
-        Intuitive interface for easy extraction of reports, ensuring optimal accessibility to necessary information for HR personnel.
+        Intuitive interface for easy extraction of reports, ensuring optimal accessibility to necessary information for
+        HR personnel.
     </Accordion>
     <Accordion title="Employee Database">
-        Maintain a comprehensive database of employee profiles, including personal information and work history, with flexible accessibility based on needs.
+        Maintain a comprehensive database of employee profiles, including personal information and work history, with
+        flexible accessibility based on needs.
     </Accordion>
     <Accordion title="Medical Consultation Tracking">
-        Allow HR administrators to easily access records of medical consultations, treatments, and prescriptions to monitor employee health and well-being.
+        Allow HR administrators to easily access records of medical consultations, treatments, and prescriptions to
+        monitor employee health and well-being.
     </Accordion>
     <Accordion title="Workplace Accident Management">
-        Provide detailed reporting on workplace accidents, administered treatments, and sick leaves for thorough evaluation and accurate report generation.
+        Provide detailed reporting on workplace accidents, administered treatments, and sick leaves for thorough
+        evaluation and accurate report generation.
     </Accordion>
     <Accordion title="Date and ID Filtering">
-        Enable HR staff to easily generate reports for specific time periods and individual employees identified by their unique identifier (Employee ID), allowing for targeted analysis and intervention.
+        Enable HR staff to easily generate reports for specific time periods and individual employees identified by
+        their unique identifier (Employee ID), allowing for targeted analysis and intervention.
     </Accordion>
     <Accordion title="Role-Based Access Control (RBAC)">
-        Implement RBAC to regulate access to HR reports based on user roles and permissions, ensuring data confidentiality and security.
+        Implement RBAC to regulate access to HR reports based on user roles and permissions, ensuring data
+        confidentiality and security.
     </Accordion>
 </AccordionGroup>
 
 ## Technical Scope
 
-<CodeGroup>
-    <CodeBlock title="Frontend">
-        ```
-        - Developed using Angular framework
-        - Responsive design for various devices
-        - Interactive user interface
-        ```
-    </CodeBlock>
-    <CodeBlock title="Backend">
-        ```
-        - Developed using FastAPI
-        - RESTful API architecture
-        - Integration with PostgreSQL database
-        ```
-    </CodeBlock>
-    <CodeBlock title="Deployment">
-        ```
-        - Containerized using Docker
-        - Deployable on local web servers
-        - Compatible with modern web browsers
-        ```
-    </CodeBlock>
-</CodeGroup>
+<Tabs>
+    <Tab title="Frontend">
+        <Card>
+            <ul>
+                <li><code>Angular</code> framework for robust client-side application</li>
+                <li>Responsive design ensuring compatibility across devices</li>
+                <li>Interactive UI for enhanced user experience</li>
+                <li>Integration with <code>Firebase</code> for real-time notifications</li>
+            </ul>
+        </Card>
+    </Tab>
+    <Tab title="Backend">
+        <Card>
+            <ul>
+                <li><code>FastAPI</code> for high-performance server-side operations</li>
+                <li>RESTful API architecture for efficient data communication</li>
+                <li>Integration with <code>PostgreSQL</code> for reliable data storage</li>
+                <li><code>Celery</code> for managing asynchronous tasks and background jobs</li>
+                <li><code>Redis</code> as message broker for Celery and caching</li>
+                <li><code>Microsoft Graph API</code> for email functionality</li>
+            </ul>
+        </Card>
+    </Tab>
+    <Tab title="Deployment">
+        <Card>
+            <ul>
+                <li>Containerization using <code>Docker</code> for consistent environments</li>
+                <li>Flexible deployment options including local web servers</li>
+                <li>Cross-browser compatibility for wide accessibility</li>
+            </ul>
+        </Card>
+    </Tab>
+    <Tab title="Version Control">
+        <Card>
+            <ul>
+                <li><code>Git</code> for distributed version control</li>
+                <li>Branch-based workflow for feature development and bug fixes</li>
+                <li>Code review process using pull requests</li>
+                <li>Integration with CI/CD pipelines for automated testing and deployment</li>
+            </ul>
+        </Card>
+    </Tab>
+</Tabs>
 
 <Note>
-    While these features are not included in the current scope, the system architecture is designed to allow for future expansions and integrations.
+    The technical stack is chosen to ensure scalability, performance, and ease of maintenance. Each component plays a
+    crucial role in delivering a robust and efficient HealthStaff system.
+</Note>
+
+<AccordionGroup>
+    <Accordion title="Real-time Notifications">
+        Firebase is integrated to provide instant, real-time notifications to users. This ensures that important
+        updates, alerts, or messages are delivered promptly, enhancing user engagement and system responsiveness.
+    </Accordion>
+    <Accordion title="Notifications Email Integration">
+        Microsoft Graph API is utilized to enable email functionality within the application. This integration allows:
+        - Sending emails using the organization's email infrastructure
+        - Access to user calendars and contacts (if required)
+        - Seamless integration with other Microsoft 365 services
+    </Accordion>
+    <Accordion title="Background Task Processing">
+        Celery, in conjunction with Redis, is implemented to handle background tasks efficiently. This setup allows for:
+        - Asynchronous processing of time-consuming operations
+        - Scheduled tasks (e.g., periodic reports, data updates)
+        - Improved system performance by offloading heavy tasks from the main application thread
+    </Accordion>
+    <Accordion title="Version Control and Collaboration">
+        Git is used as the version control system, providing:
+        - Distributed development capabilities
+        - Efficient branching and merging for feature development and bug fixes
+        - Collaborative coding through pull requests and code reviews
+        - Integration with CI/CD tools for automated testing and deployment workflows
+    </Accordion>
+</AccordionGroup>
+
+<Note>
+    While these features are not included in the current scope, the system architecture is designed to allow for future
+    expansions and integrations.
 </Note>
 
 By clearly defining the project scope, we ensure that the HealthStaff system focuses on delivering core functionalities that address the critical needs of healthcare HR management while maintaining flexibility for future enhancements.
