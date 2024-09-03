@@ -36,10 +36,6 @@
     {
       "name": "Chapter 2",
       "url": "chapter2"
-    },
-    {
-      "name": "API Reference",
-      "url": "api-reference"
     }
   ],
   "anchors": [
@@ -82,20 +78,6 @@
         "chapter2/Design/System_Architecture",
         "chapter2/Design/Design_Methodology",
         "chapter2/Design/Module"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
       ]
     }
   ],
