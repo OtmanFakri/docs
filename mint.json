@@ -17,12 +17,12 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "PPT",
       "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "PDF",
     "url": "https://dashboard.mintlify.com"
   },
   "primaryTab": {
@@ -32,6 +32,10 @@
     {
       "name": "Chapter 1",
       "url": "chapter1"
+    },
+    {
+      "name": "Chapter 2",
+      "url": "chapter2"
     },
     {
       "name": "API Reference",
@@ -50,12 +54,34 @@
       ]
     },
     {
-      "group": "Chapter 1",
+      "group": "Chapter 1: Introduction",
       "pages": [
-        "chapter1/introduction",
-        "chapter1/problem-description",
-        "chapter1/project-objectives",
-        "chapter1/project-scope"
+        "Project-Details/chapter1/introduction",
+        "Project-Details/chapter1/problem-description",
+        "Project-Details/chapter1/project-objectives",
+        "Project-Details/chapter1/project-scope"
+      ]
+    },
+    {
+      "group": "Chapter 2: Literature Review",
+      "pages": [
+        "chapter2/introduction"
+      ]
+    },
+    {
+      "group": "Requirement Specifications",
+      "pages": [
+        "chapter2/RequirementSpecifications/Existing_System",
+        "chapter2/RequirementSpecifications/Proposed_System",
+        "chapter2/RequirementSpecifications/Requirement_Specifications"
+      ]
+    },
+    {
+      "group": "Design",
+      "pages": [
+        "chapter2/Design/System_Architecture",
+        "chapter2/Design/Design_Methodology",
+        "chapter2/Design/Module"
       ]
     },
     {

@@ -1,0 +1,119 @@
+This document outlines the architecture and implementation of the HealthStaff backend application, which appears to be a complex system for managing employee data, medical records, and various organizational aspects.
+
+## Project Structure
+
+The application follows a modular structure, with separate directories for different features and concerns:
+
+```
+aptiv-backend-new/
+│
+├── alembic/
+├── AuditLog/
+├── auth/
+├── avatars/
+├── certificate/
+├── ChnagePost/
+├── configs/
+├── Consultation/
+├── Department/
+├── employee/
+│   ├── EmployeeVerification.py
+│   ├── events/
+│   ├── models/
+│   ├── repo/
+│   ├── routers/
+│   ├── schemas/
+│   └── service/
+├── ENUM/
+├── ETL/
+├── Export/
+├── helper/
+├── Injury/
+├── MedicalExamination/
+├── MedicalRecord/
+├── Notification/
+├── Role/
+│   ├── models/
+│   ├── Repo/
+│   ├── Routers/
+│   ├── Schema/
+│   └── Serives/
+├── Store/
+├── Templete/
+├── templates/
+├── workers/
+├── alembic.ini
+├── docker-compose.yml
+├── Dockerfile
+├── init.sql
+├── main.py
+└── requirements.txt
+```
+
+## Key Components
+
+1. **FastAPI Application**: The main entry point is `main.py`.
+2. **Alembic**: Used for database migrations (`alembic/` directory and `alembic.ini`).
+3. **Docker**: The application is containerized (`Dockerfile` and `docker-compose.yml`).
+4. **Authentication**: Handled in the `auth/` directory.
+5. **Employee Management**: Comprehensive module in the `employee/` directory.
+6. **Role Management**: Handled in the `Role/` directory.
+7. **Medical Records**: Various modules like `MedicalRecord/`, `MedicalExamination/`, and `Consultation/`.
+8. **Departments**: Managed in the `Department/` directory.
+9. **Notifications**: Handled in the `Notification/` directory.
+10. **Audit Logging**: Implemented in the `AuditLog/` directory.
+11. **ETL Processes**: Managed in the `ETL/` directory.
+12. **Helper Functions**: Located in the `helper/` directory.
+
+## Detailed Structure for Employee Module
+
+The employee module follows a clean architecture:
+
+```
+employee/
+├── EmployeeVerification.py
+├── events/
+├── models/
+├── repo/
+├── routers/
+├── schemas/
+└── service/
+```
+
+- `models/`: Database models
+- `schemas/`: Pydantic models for request/response
+- `repo/`: Data access layer
+- `service/`: Business logic
+- `routers/`: API endpoints
+- `events/`: Event handlers
+
+## Detailed Structure for Role Module
+
+The Role module has a similar structure:
+
+```
+Role/
+├── models/
+├── Repo/
+├── Routers/
+├── Schema/
+└── Serives/
+```
+
+## Conclusion
+
+This architecture provides a robust foundation for a complex application like APTIV. The modular structure allows for:
+
+1. Clear separation of concerns
+2. Easy testing of individual components
+3. Scalability and maintainability
+4. Flexibility to add new features or modify existing ones
+
+As you continue developing, consider:
+
+- Implementing comprehensive test coverage
+- Setting up CI/CD pipelines
+- Documenting API endpoints using FastAPI's built-in Swagger UI
+- Implementing proper error handling and logging throughout the application
+
+Remember to keep your dependencies updated and regularly review your code for potential improvements and optimizations.

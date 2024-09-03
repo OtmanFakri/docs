@@ -1,0 +1,57 @@
+## Requirement Specifications
+
+The HealthStaff system must meet the following requirements to effectively serve APTIV's healthcare staff management needs:
+
+### Functional Requirements
+
+1. User Authentication and Authorization
+- FR1.1: The system shall provide secure login functionality for users.
+- FR1.2: The system shall support role-based access control (RBAC) with at least three roles: Nurse, HR, and Management.
+
+2. Employee Request Management
+- FR2.1: Nurses shall be able to enter and submit employee requests into the system.
+- FR2.2: Each request shall be assigned a unique identifier for tracking purposes.
+- FR2.3: The system shall automatically notify relevant HR/Management personnel when a new request is entered.
+
+3. Data Storage and Retrieval
+- FR3.1: The system shall store all employee and request data in a centralized database.
+- FR3.2: Users shall be able to search and retrieve employee information based on various criteria (e.g., employee ID, name, department).
+- FR3.3: The system shall maintain a complete history of all requests and actions taken.
+
+4. Reporting and Analytics
+- FR4.1: HR and Management users shall be able to generate predefined reports (e.g., monthly request summary, employee health status overview).
+- FR4.2: The system shall provide customizable reporting options, allowing users to select specific data points for inclusion.
+- FR4.3: The system shall offer basic data visualization tools (e.g., charts, graphs) for generated reports.
+
+5. Notification System
+- FR5.1: The system shall send automated email notifications for new requests, status updates, and approaching deadlines.
+- FR5.2: Users shall be able to customize their notification preferences within the system.
+
+6. Data Import/Export
+- FR6.1: The system shall provide functionality to import existing employee data from Excel spreadsheets.
+- FR6.2: Users shall be able to export report data in common formats (e.g., PDF, Excel).
+
+<img height="200" noZoom src="/images/use_case.png"/>
+
+### Non-Functional Requirements
+
+1. Security
+- NFR2.1: All data transmissions shall be encrypted using industry-standard protocols (e.g., HTTPS, TLS 1.2 ).
+- NFR2.2: The system shall enforce strong password policies (minimum length, complexity requirements).
+- NFR2.3: The system shall log all login attempts and critical operations for auditing purposes.
+
+2. Scalability
+- NFR4.1: The system architecture shall support horizontal scaling to accommodate future growth.
+- NFR4.2: The database shall be designed to efficiently handle an increasing volume of data over time.
+
+3. Usability
+- NFR5.1: The user interface shall be intuitive and require minimal training for basic operations.
+- NFR5.2: The system shall be accessible via modern web browsers (Chrome, Firefox, Safari, Edge) without requiring additional plugins.
+
+4. Maintainability
+- NFR7.1: The system shall be built using modular architecture to facilitate future updates and modifications.
+- NFR7.2: Comprehensive system documentation shall be provided, including user manuals and technical specifications.
+
+
+These requirements provide a comprehensive framework for the development of the HealthStaff system, ensuring that it meets APTIV's needs for efficient healthcare staff management while maintaining high standards of performance, security, and usability.
+
